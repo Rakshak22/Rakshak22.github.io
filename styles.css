@@ -1,0 +1,237 @@
+body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #111;
+  position: sticky;
+  top: 0;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color:dimgray;}
+
+ul.topnav li a.active {background-color:dimgray;}
+
+ul.topnav li.right {float: right;}
+
+.heading{
+    font-weight: bold;
+    font-size: larger;
+}
+
+.school_headings{
+    font-weight: bold; 
+    font-size: 20px;
+}
+
+#signature{
+    font-family: cursive;
+}
+
+#profile {
+    margin-left: 30%;
+}
+
+#about{
+    width: 100%;
+    padding: 20px;
+    padding-bottom:100px;
+}
+
+#about_me{
+    width:65%; 
+    float: left;    
+    font-family: fantasy;
+    font-size: 25px;
+}
+
+.left{
+    float:left;
+}
+
+.right{
+    float: right;
+}
+
+footer{
+    background: #111;
+    color: #fff;
+    padding: 31px 0;
+    text-align: center;
+    width: 100%;
+    position:fixed;
+    bottom:0;
+    left:0;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 25px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 50vw;
+  height: 100%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.circular{
+ margin: 100px;
+  height:100px;
+  width: 100px;
+  position: relative;
+  transform:scale(2);
+  display: inline-block;
+}
+
+.circular .inner{
+  position: absolute;
+  z-index: 6;
+  top: 50%;
+  left: 50%;
+  height: 80px;
+  width: 80px;
+  margin: -40px 0 0 -40px;
+  background: #dde6f0;
+  border-radius: 100%;
+}
+
+.circular .number{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  z-index:10;
+  font-size:18px;
+  font-weight:500;
+  color:#4158d0;
+}
+
+.circular .bar{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  -webkit-border-radius: 100%;
+  clip: rect(0px, 100px, 100px, 50px);
+}
+
+.circle .bar .progress{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-border-radius: 100%;
+  clip: rect(0px, 50px, 100px, 0px);
+  background: #4158d0;
+}
+
+.circle .left .progress,
+.circle .left_css .progress,
+.circle .left_js .progress
+{
+  z-index:1;
+  animation: left 2s linear both;
+}
+
+@keyframes left{
+  100%{
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes left_css{
+  70%{
+    transform: rotate(126deg);
+  }
+}
+
+@keyframes left_js{
+  50%{
+    transform: rotate(90deg);
+  }
+}
+
+.circle .right {
+  transform: rotate(180deg);
+  z-index:3;
+}
+
+.circle .right_css {
+    transform: rotate(126deg); 
+    z-index:3;
+}
+
+.circle .right_js {
+    transform: rotate(90deg); 
+    z-index:3;
+}
+
+.circle .right .progress,
+.circle .right_css .progress,
+.circle .right_js .progress
+{
+  animation: right 2s linear both;
+  animation-delay:2s;
+}
+
+@keyframes right{
+  100%{
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes right_css{
+  70%{
+    transform: rotate(126deg);
+  }
+}
+
+@keyframes right_js{
+  50%{
+    transform: rotate(90deg);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+  #profile {padding-top: 40%; margin-left: 0%;}
+  #about_me {font-size: 15px;}
+  #profile img{width: 40%;}
+  .circular {margin: 60px;}
+}
