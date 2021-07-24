@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <ul class="topnav">
+        <li><a href="#about" onclick="about()">About</a></li>
+        <li><a href="#skills" onclick="skills()">Skills</a></li>
+        <li><a href="#education" onclick="education()">Education</a></li>
+        <li><a href="#contact"onclick="contact()" >Contact</a></li>
+        <li class="right" onclick="about()"><a href="#home" class="active">RAKSHAK SHET</a></li>
+    </ul>
+
+    <div id="tab_contents">
+        <div id="about">
+            <div id="about_me"> 
+                <p class="heading">ABOUT ME (;)</p>
+                <p> I am Rakshak Shet from Kundapura, Udupi Dist, currently am studing 6th semester Bachelour of Engineering in SMVIT, Bantakal. </p>
+                <p> My areas of intrests are Coding, Learning new technologies, Web designing, Playing Games, Bike Riding, Traveling.</p>
+            </div>
+            <div id="profile"> 
+                <img src="Rakshak.jpg" alt="Rakshak Shet">
+            </div>
+            <div>
+                <p>Yours Sincerely</p>
+                <p id="signature">Rakshak shet</p>
+            </div>
+        </div>
+
+
+        <div id="skills" style="display: none;"> 
+            <p class="heading">SKILLS</p>
+
+            <div class="circular">
+                <div class="inner"></div>
+                <div class="number">HTML</div>
+                <div class="circle">
+                <div class="bar left">
+                    <div class="progress"></div>
+                </div>
+                <div class="bar right">
+                    <div class="progress"></div>
+                </div>
+                </div>
+            </div>
+
+            <div class="circular">
+                <div class="inner"></div>
+                <div class="number">CSS</div>
+                <div class="circle">
+                <div class="bar left_css">
+                    <div class="progress"></div>
+                </div>
+                <div class="bar right_css">
+                    <div class="progress"></div>
+                </div>
+                </div>
+            </div>
+
+            <div class="circular">
+                <div class="inner"></div>
+                <div class="number">JS</div>
+                <div class="circle">
+                <div class="bar left_js">
+                    <div class="progress"></div>
+                </div>
+                <div class="bar right_js">
+                    <div class="progress"></div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="education" style="display: none;"> 
+            <p class="heading">EDUCATION</p>
+            <ul type="square" style="font-family: fantasy;">
+                <li>
+                    <p class="school_headings">Shri Madwa Vadiraj Institute Of Technlogy and Management</p>
+                    <p>Bantakal, Udupi</p>
+                    <p>B.E (Computer Science)   2018- Present</p>
+                </li>
+                <li>
+                    <p class="school_headings">Shri Venkataramana P.U College</p>
+                    <p>Kundapura</p>
+                    <p>P.C.M.C   2016- 2018</p>
+                </li>
+                <li>
+                    <p class="school_headings">Shri Venkataramana English Medium School</p>
+                    <p>Kundapura</p>
+                    <p>Primary, High School  2005-2016</p>
+                </li>
+            </ul>
+        </div>
+
+
+        <div id="contact" class="container" style="display: none;">
+            <p class="heading">CONTACT</p>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name..">
+        
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email..">
+                
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+            <button onclick="contactMe()">Contact Me</button> 
+        </div>
+    </div>
+    <footer>© 2021. RAKSHAK SHET</footer>
+</body>
+</html>
